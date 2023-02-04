@@ -1,35 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+html {
+    background-color: #19191C;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
 }
-.content{
+
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #19191C;
+    background-color: #5E626C;
     width: 80%;
     grid-template-areas:
         "nlogin login login";
+    border: 2px solid #6FC3DF;
+    border-radius: 50px;
+}
 
-    
-    
-}
-.new-login{
-    background-color: aqua;
+.new-login {
     grid-area: nlogin;
-    
+
 }
-.login{
-    background-color: blueviolet;
+
+.login {
+
     grid-area: login;
-    
+
 }
