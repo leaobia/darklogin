@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #19191C;
+    width: 80%;
+    grid-template-areas:
+        "nlogin login login";
+
+    
+    
+}
+.new-login{
+    background-color: aqua;
+    grid-area: nlogin;
+    
+}
+.login{
+    background-color: blueviolet;
+    grid-area: login;
+    
+}
