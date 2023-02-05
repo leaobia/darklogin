@@ -142,3 +142,34 @@ h2 {
 .label-body{
     font-size: 14px;
 }
+
+.btn-create2{
+    display: none;
+}
+
+@media (max-width: 600px){
+  .new-login{
+    display: none;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "login login login";
+    border-radius: 45px;
+}
+.input1,.input2{
+    width: 60vw;
+}
+
+.btn-create2{
+    display: grid;
+    place-self: center;
+    margin-bottom: 4%;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .6rem;
+}
+}
+
