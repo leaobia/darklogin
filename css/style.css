@@ -25,60 +25,120 @@ body {
     grid-template-areas:
         "nlogin login login";
     border: 2px solid #6FC3DF;
-    box-shadow: #6FC3DF 0px 5px 15px;
+    box-shadow: #6FC3DF 0px 3px 10px;
     border-radius: 50px;
-    padding: 4%;
 }
 
 .new-login {
     grid-area: nlogin;
     display: grid;
     grid-template-areas: "img"
-    "h1"
-    "button";
+        "h1"
+        "button";
     gap: 2em;
-    
+    border-right: 1px solid #6FC3DF;
 }
 
-.img{
+
+.img {
     display: grid;
     place-self: center;
-    
+    padding-top: 4%;
 }
 
-img{
+img {
     grid-area: img;
     width: 15vw;
 }
 
-h1{
-    font-size: clamp(2em, 1em + 2vw, 1.5em);
+h1 {
+    font-size: clamp(.4em, .4em + 2vw, 2em);
     text-align: center;
     color: #FFFFFF;
-    font-weight: 300;
     grid-area: h1;
+    font-weight: 300;
 }
 
-.btn-create{
+.btn-create {
     grid-area: button;
     background-color: azure;
     display: grid;
     place-self: center;
     padding: 10px;
     width: 70%;
-    font-size: clamp(.3em, .3em + .9vw, 1.1em);
+    font-size: clamp(.1em, .3em + .9vw, 1.1em);
     border-radius: 10px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: .3s;
-    
+    margin-bottom: 4%;
+
 }
 
-.btn-create:hover{
-  box-shadow: #6FC3DF 0px 1px 5px;
+.btn-create:hover {
+    box-shadow: #6FC3DF 0px 1px 5px;
 }
+
 .login {
-
+    display: grid;
+    place-content: center;
     grid-area: login;
+    gap: 2em;
 
+}
+
+.inputs {
+    display: grid;
+    gap: 45%
+   /* grid-template-areas: "input1"
+        "input2";*/
+}
+
+.input1,.input2{
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid #6FC3DF;
+    background-color: #19191C;
+    display: grid;
+    color: #FFFFFF;
+    outline: 0;
+    padding: 10px;
+    place-self: center;
+}
+h2 {
+    font-size: clamp(.4em, .4em + 2vw, 3em);
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 4%;
+    font-weight: 300;
+}
+
+.button-send{
+    width: 50%;
+    display: grid;
+    place-self: center;
+    padding: 10px;
+    font-size: clamp(.1em, .3em + .9vw, 1.1em);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 4%;
+}
+
+.button-send:hover {
+    box-shadow: #6FC3DF 0px 1px 5px;
+}
+
+.check{
+    
+    display: grid;
+    place-self: center;
+    padding-top: 9%;
+    grid-template-columns: .2fr 1fr;
+    color: #FFFFFF;
+}
+
+.label-body{
+    font-size: 14px;
 }
